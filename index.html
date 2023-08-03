@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--title........-->
+    <h1 id="title">SURVEY FORM</h1>
+    <p id="description">This survey will help us fix problems experienced by the users of our sofware </p>
+
+    <!--input for name, email, and age-->
+    <form id="survey-form" method="post">
+      <fieldset>
+        <label for="name" id="name-label">Name: <input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
+        <label for="email" id="email-label" >Email: <input id="email" name="email" type="email" placeholder="Enter your email" required/></label>
+        <label for="age" id="number-label">Age:(optional) <input id="number" name="age" type="number" min="12" max="50" placeholder="Age" required/></label>
+
+  <!--selection box for options on the current role that u are in while using the sofware-->
+        <label for="">Which option best describes your current role?
+          <select id="dropdown" name="current role">
+            <option value="" disabled >select current role </option>
+            <option value="1">student</option>
+            <option value="2">Full time job</option>
+            <option value="3">Full time learner</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+          </select>
+        <fieldset> 
+
+<!--radio boxes for recommendation of the software to other people--> 
+        <h4>Would you recommend our software to your friend?</h4>
+        <label for="refer-option"><input id="refer-option" type="radio" name="refer-option" class="inline" value="Definitely" /> Definitely</label>
+        <label for="refer-option"><input id="maybe" type="radio" name="refer-option" class="inline" value="Maybe"/>Maybe</label>
+        <label for="refer-option"><input id="refer-option" type="radio" name="refer-option" class="inline" value="Not_sure"/> Not sure</label>
+        </fieldset>
+
+<!--labeals for the selection of favourite feature on the software--> 
+        <label for="">What is yout favourite feature in our software
+          <select id="dropdown" name="favourite-feature">
+            <option value="" disabled >select an option</option>
+            <option value="1">Challenges</option>
+            <option value="2">Projects</option>
+            <option value="3">Community</option>
+            <option value="4">Open source</option>
+            <option value="5">Other</option>
+          </select>
+
+<!--checkboxes for selection of things to be improved on the software--> >
+        <label for="improvements">
+          <input id="improvements" type="checkbox" value="Front-end" required name="improvements" class="inline" />Front-end</label>
+          <label for="improvements">
+          <input id="improvements" type="checkbox" value="Back-end" required name="improvements" class="inline" />Back-end</label>
+          <label for="improvements">
+          <input id="improvements" type="checkbox"  value="Open source community"required name="improvements" class="inline" />Open source community</label>
+          <label for="improvements">
+          <input id="improvements" type="checkbox" value="Additional courses" required name="improvements" class="inline" />Additional courses</label>
+
+          <!--last label for comments about the software-->
+          <label for="comments">Any comments or suggestions?
+<textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+<!--button for the survey submission-->
+        </fieldset>
+      <button id="submit" type="submit" >submit</button>
+    </form>
+  </body>
+</html>
