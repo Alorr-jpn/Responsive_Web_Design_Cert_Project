@@ -1,0 +1,85 @@
+#nav-bar{
+   position:fixed;
+   top:0;
+   left: 0;
+}
+
+
+* {
+  background-color: black;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: pink;
+}
+
+
+li {
+  float: right;
+  background-color: pink;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: #111;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+h2, p {
+  font-family: 'Raleway', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: linen;
+}
+#hero {
+  grid-column: 1 / -1;
+  position: relative;
+  text-align: center;
+}
+header {
+justify-content: flex-end;
+position: positioned;
+display: flex;
+flex-direction: row;
+flex-wrap: none;
+width: 100%;
+top: 0;
+left: 0;
+  padding: 1em;
+
+}
+@media only screen and (max-width: 720px) {
+  .image-wrapper {
+    grid-template-columns: 1fr;
+  }
+  i {
+    color: pink;
+  }
+  #submit {
+    background-color: black;
+  }
+  input {
+    font-weight: bold;
+    font-size: 15;
+  }
+  .btn {
+    color:white;
+    padding-top: 15px;
+  }}
